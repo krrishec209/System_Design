@@ -24,3 +24,11 @@ From comprehensive guides to case studies and articles, these resources cover ev
 
 10. Distributed Systems for Fun and Profit - https://lnkd.in/d2fKeyNR
 
+
+YouTube channels :
+
+ConceptandCoding : https://www.youtube.com/@ConceptandCoding
+
+ LLD from Basics to Advanced: https://www.youtube.com/playlist?list=PL6W8uoQQ2c61X_9e6Net0WdYZidm7zooW
+ HLD from Basics to Advanced: https://www.youtube.com/playlist?list=PL6W8uoQQ2c63W58rpNFDwdrBnq5G3EfT7
+
