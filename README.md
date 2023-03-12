@@ -32,3 +32,11 @@ ConceptandCoding : https://www.youtube.com/@ConceptandCoding
  LLD from Basics to Advanced: https://www.youtube.com/playlist?list=PL6W8uoQQ2c61X_9e6Net0WdYZidm7zooW
  HLD from Basics to Advanced: https://www.youtube.com/playlist?list=PL6W8uoQQ2c63W58rpNFDwdrBnq5G3EfT7
 
+**************************
+
+1) Sandeep Kaul - codeKarle
+2) Gaurav Sen
+3) Narendra L - Tech Dummies Narendra L
+4) Yogita Sharma - sudoCODE
+5) The Tech Granth
+
