@@ -17,3 +17,12 @@ Ricardo A. M.
 Arpit Adlakha
 
 Thank you for Sharing. Hussein Nasser and Kaivalya Apte will be a great addition to this list.
+
+Check Dr Milan Milanović , his content is amazing!
+Martin Kleppmann
+
+Yogita Sharma
+
+
+
+hina Arora
