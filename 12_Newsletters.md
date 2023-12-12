@@ -1,5 +1,6 @@
 In the Tech layoffs era, the best thing a Software Engineer or an Engineering Manager can do is to stay ahead of the curve by keeping their skills up to date and as sharp as possible. How to do that? Read tech newsletters! Here are 12 of the best personally vetted newsletters everybody should read.
 
+
 1/ The Pragmatic Engineer by Gergely Orosz - https://lnkd.in/gQ6NfATy
 My absolute favorite newsletter, covering a variety of topics from in-depth analysis of how various companies do things to general solid advice on career growth and engineering management.
 
@@ -35,3 +36,12 @@ Easy-to-understand explanations of complex architectures.
 
 12/ And lastly, me 😊 with “The Caring Techie Newsletter” - https://lnkd.in/gYBS3EMe
 My newsletter focuses on soft skills, communication, and building caring leaders and it's based on my experience at Big Tech (Google, Uber) and early-stage startups.
+
+https://www.linkedin.com/in/irinastanescu
+
+
+
+
+
+
+
