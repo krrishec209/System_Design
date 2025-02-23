@@ -47,6 +47,11 @@ Choosing the right API architecture is critical for building scalable, efficient
 
  
  https://www.linkedin.com/posts/abdalshuaibi_apis-softwarearchitecture-devops-activity-7293599381956526082-2XF0?utm_source=share&utm_medium=member_desktop
+
+ **********************
+
+ ![image](https://github.com/user-attachments/assets/5104056e-b939-4623-b9ef-801cc0592595)
+
  
 
 
