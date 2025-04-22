@@ -166,3 +166,57 @@ Projects in 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 and 𝗠𝗶𝗰�
 These projects give a solid foundation to showcase your abilities in System Design, DSA, and Microservices in interviews. If possible, try implementing one or two projects yourself, adding your personal touch to stand out even more!
 
 https://www.linkedin.com/posts/rajatgajbhiye_projects-in-%F0%9D%97%A6%F0%9D%98%86%F0%9D%98%80%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BA-%F0%9D%97%97%F0%9D%97%B2%F0%9D%98%80%F0%9D%97%B6%F0%9D%97%B4%F0%9D%97%BBand-activity-7319932915100864513-z637?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
+*************
+
+Mastering Microservices:- 14 Design Patterns Every Developer Should Know
+
+
+1. API Gateway Pattern – Centralizes requests, load balancing, and authentication.
+
+
+2. Service Registry Pattern – Enables dynamic discovery and communication between services.
+
+
+3. Circuit Breaker Pattern – Prevents cascading failures with smart fallback mechanisms.
+
+
+4. Saga Pattern – Manages long-running transactions across services.
+
+
+5. CQRS Pattern – Separates read/write workloads for better performance.
+
+
+6. Bulkhead Pattern – Isolates failures to protect system stability.
+
+
+7. Sidecar Pattern – Offloads support tasks like logging and monitoring.
+
+
+8. API Composition Pattern – Aggregates responses from multiple services.
+
+
+9. Event-Driven Architecture Pattern – Promotes loose coupling with asynchronous events.
+
+
+10. Database per Service Pattern – Maintains autonomy with independent data stores.
+
+
+11. Retry Pattern – Automatically retries operations to boost reliability.
+
+
+12. Configuration Externalization Pattern – Keeps configs outside the codebase.
+
+
+13. Strangler Fig Pattern – Gradually replaces legacy systems with modern services.
+
+
+14. Leader Election Pattern – Coordinates distributed service decisions.
+
+
+Each pattern solves a unique challenge. Choose wisely based on your system’s needs.
+
+Have you used any of these patterns in your architecture? Would love to hear how they helped.
+
+https://www.linkedin.com/posts/ashish-pratap-singh_design-patterns-ugcPost-7314233677738135552-oHjA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
