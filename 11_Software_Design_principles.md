@@ -67,4 +67,50 @@ Pick up 2-3 in a week and read them thoroughly to build strong fundamentals.
 
 
 https://www.linkedin.com/posts/dhirendra-sinha_these22system-design-fundamentals-articles-activity-7327706971531288580-kqO0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
-    
+
+
+    ******************
+
+    𝗡𝗼 𝗳𝗿𝗲𝗲 𝗹𝘂𝗻𝗰𝗵 𝗶𝗻 𝘀𝘆𝘀𝘁𝗲𝗺 𝗱𝗲𝘀𝗶𝗴𝗻, 𝗲𝘃𝗲𝗿𝘆 𝗱𝗲𝗰𝗶𝘀𝗶𝗼𝗻 𝗶𝘀 𝗮 𝘁𝗿𝗮𝗱𝗲-𝗼𝗳𝗳.
+
+Architecting systems is a balancing act. You can’t optimize one dimension without impacting another. 
+
+Some classic trade-offs engineers grapple with:
+
+🔹 𝗖𝗼𝗻𝘀𝗶𝘀𝘁𝗲𝗻𝗰𝘆 𝘃𝘀. 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗶𝗹𝗶𝘁𝘆: As the CAP theorem tells us, ultra-high availability might mean accepting eventual consistency.
+
+🔹 𝗦𝘆𝗻𝗰𝗵𝗿𝗼𝗻𝗼𝘂𝘀 𝘃𝘀. 𝗔𝘀𝘆𝗻𝗰𝗵𝗿𝗼𝗻𝗼𝘂𝘀: Synchronous calls are straightforward but block the caller; asynchronous flows improve throughput at the cost of added complexity (e.g., idempotency, message ordering).
+
+🔹 𝗦𝗽𝗲𝗲𝗱 𝘃𝘀. 𝗧𝗵𝗼𝗿𝗼𝘂𝗴𝗵𝗻𝗲𝘀𝘀: Caching and eventual consistency boost speed but risk stale data. More real-time accuracy can mean slower responses.
+
+🔹 𝗦𝗶𝗺𝗽𝗹𝗶𝗰𝗶𝘁𝘆 𝘃𝘀. 𝗙𝗹𝗲𝘅𝗶𝗯𝗶𝗹𝗶𝘁𝘆: A monolith is simpler to build and maintain initially, but microservices offer flexibility (at the cost of complexity).
+
+🔹 𝗣𝗿𝗲-𝗰𝗼𝗺𝗽𝘂𝘁𝗮𝘁𝗶𝗼𝗻 𝘃𝘀. 𝗢𝗻-𝗗𝗲𝗺𝗮𝗻𝗱: Precomputing analytics or aggregates lowers runtime latency but increases storage and processing complexity. On-demand computation keeps data fresh but can spike response times.
+
+🔹 𝗖𝗼𝘀𝘁 𝘃𝘀. 𝗥𝗲𝘀𝗶𝗹𝗶𝗲𝗻𝗰𝗲: 99.99% uptime requires extra servers, backups, and complexity, which costs money.
+
+🔹 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝘃𝘀. 𝗖𝗼𝗻𝘃𝗲𝗻𝗶𝗲𝗻𝗰𝗲: Tighter security measures protect your system but can slow down development and reduce ease of use.
+
+🔹 𝗕𝘂𝗶𝗹𝗱 𝘃𝘀. 𝗕𝘂𝘆: Building in-house allows full customization but uses more engineering resources; buying off-the-shelf speeds things up but limits flexibility.
+
+Great architects weigh these trade-offs based on context. There’s no one-size-fits-all: it’s about choosing the right compromise for the problem. 
+
+What trade-off have you struggled with in your designs?
+
+
+Explore common trade-offs in system design interviews:
+
+→ 𝗦𝘁𝗿𝗼𝗻𝗴 𝘃𝘀 𝗘𝘃𝗲𝗻𝘁𝘂𝗮𝗹 𝗖𝗼𝗻𝘀𝗶𝘀𝘁𝗲𝗻𝗰𝘆: https://lnkd.in/dMaN93xn
+→ 𝗟𝗮𝘁𝗲𝗻𝗰𝘆 𝘃𝘀 𝗧𝗵𝗿𝗼𝘂𝗴𝗵𝗽𝘂𝘁: https://lnkd.in/dz4f4J9Z
+→ 𝗕𝗮𝘁𝗰𝗵 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝘃𝘀 𝗦𝘁𝗿𝗲𝗮𝗺 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴: https://lnkd.in/dzsXd88q
+→ 𝗟𝗼𝗮𝗱 𝗕𝗮𝗹𝗮𝗻𝗰𝗲𝗿 𝘃𝘀. 𝗔𝗣𝗜 𝗚𝗮𝘁𝗲𝘄𝗮𝘆: https://lnkd.in/dizsu6NH
+
+
+Ref:
+✅ 𝗚𝗿𝗼𝗸𝗸𝗶𝗻𝗴 𝘁𝗵𝗲 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 - https://lnkd.in/g4Wii9r7
+✅ 𝗚𝗿𝗼𝗸𝗸𝗶𝗻𝗴 𝘁𝗵𝗲 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 - https://lnkd.in/dAPppxuW
+
+![image](https://github.com/user-attachments/assets/835ff32f-c63b-4705-aeab-7bccfcd747dd)
+
+
+https://www.linkedin.com/posts/arslanahmad_systemdesign-coding-interviewtips-activity-7328749264149315585-sTSD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
