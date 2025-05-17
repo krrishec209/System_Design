@@ -22,4 +22,49 @@
 
 11) 𝐘𝐀𝐆𝐍𝐈 (𝐘𝐨𝐮 𝐀𝐫𝐞𝐧'𝐭 𝐆𝐨𝐧𝐧𝐚 𝐍𝐞𝐞𝐝 𝐈𝐭): Avoid over-engineering things. Focus on what's essential.
 
+
+*****************************************
+
+These 22 System Design Fundamentals articles will make you more prepared for your next system design interview.
+
+Pick up 2-3 in a week and read them thoroughly to build strong fundamentals.
+
+► Scalability
+↳https://lnkd.in/gjS6wgaW
+↳https://lnkd.in/g7Ubkt2p
+
+► Database scaling and Sharding
+↳https://lnkd.in/gGPf3Chj
+↳https://lnkd.in/gXtAu8_q
+↳https://lnkd.in/gR44yVbd
+
+► Fault tolerance, Replication and Disaster recovery
+↳https://lnkd.in/gXqcp36n
+↳https://lnkd.in/gN2xYsD8
+↳https://lnkd.in/gAkFBpqm
+
+► Microservices Architecture
+↳https://lnkd.in/gECnvWpW
+
+► CAP Theorem, ACID and consistency patterns
+↳https://lnkd.in/giwb5wCd
+↳https://lnkd.in/gTgBtQcN
+↳https://lnkd.in/gAy8jQaZ
+↳https://lnkd.in/gSDUb86N
+
+►Load Balancing
+↳https://lnkd.in/gXHwMtWE
+↳https://lnkd.in/gEcr53sX
+
+►Caching and CDNs
+↳https://lnkd.in/gB6JtHSf
+↳https://lnkd.in/gUcRRKHi
+↳https://lnkd.in/gr-w477q
+
+► Rate Limiting and Circuit Breaker
+↳https://lnkd.in/g4iym7DU
+↳https://lnkd.in/gCY4zhHt
+
+
+https://www.linkedin.com/posts/dhirendra-sinha_these22system-design-fundamentals-articles-activity-7327706971531288580-kqO0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
     
