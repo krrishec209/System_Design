@@ -261,3 +261,5 @@ APIs are the glue of modern systems; mastering their concepts is what keeps you 
 If you could add one more question, what would it be?
 
 https://newsletter.systemdesignclassroom.com/p/a-survival-kit-to-beat-apis-interview
+
+https://www.linkedin.com/posts/raul-junco_999-of-backend-interviews-will-ask-you-activity-7347233819386675200-ZshW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
