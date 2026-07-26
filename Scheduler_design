@@ -1,0 +1,36 @@
+Distributed Job Scheduler is one of the most common interview questions, and during my tenure at Walmart, I designed and developed it in production.
+
+What most people don't get to see is what it looks like once it's actually running in production, handling retries, crashes, and cancellations at scale.
+
+Here's how the pieces fit together:
+
+𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐚 𝐣𝐨𝐛 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐬𝐲𝐬𝐭𝐞𝐦:
+𝑨𝑷𝑰 𝑮𝒂𝒕𝒆𝒘𝒂𝒚 - Auth, rate limiting, and routing sit here before a request ever touches internal services.
+𝑱𝒐𝒃 𝑺𝒆𝒓𝒗𝒊𝒄𝒆 - owns create/edit/schedule/cancel and publishes every job execution event to Kafka. Nothing executes without going through this path first.
+𝑱𝒐𝒃 𝑺𝒆𝒂𝒓𝒄𝒉 𝑺𝒆𝒓𝒗𝒊𝒄𝒆 - a separate read path so users can look up jobs by jobId or status without hitting the write-heavy Job Service.
+
+𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐚 𝐣𝐨𝐛 𝐭𝐨 𝐚𝐜𝐭𝐮𝐚𝐥𝐥𝐲 𝐫𝐮𝐧:
+𝑾𝒂𝒕𝒄𝒉𝒆𝒓 𝑺𝒆𝒓𝒗𝒊𝒄𝒆 - polls every 10–20 sec for jobs scheduled in [now, now+5 min] and flips them to Queued. It's also the first line of failure detection: any "running" job whose modified_time is stale by 10–15 sec is assumed dead.
+𝑬𝒙𝒆𝒄𝒖𝒕𝒐𝒓 𝑺𝒆𝒓𝒗𝒊𝒄𝒆 - runs the job (Python scripts, inside Docker) and pushes failures straight to Kafka for retry.
+𝑫𝒐𝒄𝒌𝒆𝒓 𝑬𝒙𝒆𝒄𝒖𝒕𝒊𝒐𝒏 𝑳𝒂𝒚𝒆𝒓 - every job gets its own container. Fault isolation and a consistent runtime, without one bad script taking down a shared process.
+𝒁𝒐𝒐𝒌𝒆𝒆𝒑𝒆𝒓 - heartbeats from executors, used for health checks and cluster coordination.
+
+𝐖𝐡𝐞𝐧 𝐭𝐡𝐢𝐧𝐠𝐬 𝐟𝐚𝐢𝐥:
+𝑹𝒆𝒕𝒓𝒚 𝑴𝒆𝒄𝒉𝒂𝒏𝒊𝒔𝒎 - failed executions land on a Kafka retry topic, retry count gets bumped in the DB.
+𝑭𝒂𝒊𝒍𝒖𝒓𝒆 𝑫𝒆𝒕𝒆𝒄𝒕𝒊𝒐𝒏 — the hard case isn't the job that fails cleanly, it's the executor that crashes mid-job and never gets to report anything. Stale modified_time on a "running" job is the only signal you get — so the Watcher treats it as a failure and moves on.
+
+𝐊𝐢𝐥𝐥𝐢𝐧𝐠 𝐚 𝐣𝐨𝐛 𝐨𝐧 𝐩𝐮𝐫𝐩𝐨𝐬𝐞:
+𝑪𝒂𝒏𝒄𝒆𝒍 𝑱𝒐𝒃 𝑭𝒍𝒐𝒘 - future jobs are canceled via a Kafka event before they're ever queued. Running jobs are harder to manage: you can't unpublish a job that's already executing.
+𝑹𝒆𝒅𝒊𝒔 - executors poll Redis for a cancel signal mid-run. TTL on the key means a stale cancel request expires instead of haunting a job that already finished.
+
+𝐌𝐚𝐤𝐢𝐧𝐠 𝐢𝐭 𝐪𝐮𝐞𝐫𝐲𝐚𝐛𝐥𝐞:
+𝑱𝒐𝒃 𝑪𝒐𝒏𝒔𝒖𝒎𝒆𝒓 𝑺𝒆𝒓𝒗𝒊𝒄𝒆 - consumes the Kafka events and is the only writer of status, retry count, and execution metadata into the database. One writer, one source of truth.
+𝑪𝒂𝒔𝒔𝒂𝒏𝒅𝒓𝒂 - user_id as partition key, job_id as clustering key. Job lookups per user stay fast no matter how wide the table gets.
+𝑺3 - scripts, files, and artifacts a job needs at execution time live here, not in the DB.
+
+It's a small interview topic that hides a genuinely hard production problem: detecting failures, retrying safely, and cancelling something that's already running.
+
+
+
+
+https://www.linkedin.com/feed/update/urn:li:activity:7482650846615465984/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
