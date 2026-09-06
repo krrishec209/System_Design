@@ -171,3 +171,103 @@ Until I know these 23 principles.
 
 
 https://www.linkedin.com/posts/rajatgajbhiye_system-design-interviews-were-difficult-activity-7365369485739835393-7A4U?utm_source=share&utm_medium=member_desktop&rcm=ACoAAARSzbgBGEbWHnTkxyPnkFaeZcnK-pW0lqg
+
+
+***************************
+
+ DAY 21/60
+60 Days. 60 Engineering Lessons.
+
+🏗️ SYSTEM DESIGN STARTS HERE — HLD vs LLD
+
+A common interview mistake is jumping straight into databases, APIs, or classes.
+
+First understand what level you are designing at.
+
+🔷 HLD — High-Level Design
+
+Focuses on system architecture.
+
+Think:
+Clients → API Gateway → Services → Cache/DB → Queue
+
+Key concepts:
+• Scalability
+• Availability
+• Load Balancing
+• Caching
+• Databases
+• Replication & Sharding
+• Messaging
+• CAP & Consistency
+• Fault Tolerance
+• Observability
+
+🔶 LLD — Low-Level Design
+
+Focuses on how components are implemented.
+
+Think:
+Classes → Interfaces → Objects → Methods
+
+Key concepts:
+• OOP
+• SOLID
+• Design Patterns
+• Abstraction
+• Encapsulation
+• Composition
+• Concurrency
+• Thread Safety
+• Extensibility
+• Maintainability
+
+🧠 HLD vs LLD
+
+HLD: “What components do we need and how do they communicate?”
+
+LLD: “How do we design those components and their interactions?”
+
+🎯 SYSTEM DESIGN INTERVIEW FLOW
+
+Requirements → Scale → APIs → Data Model → Architecture → Trade-offs → Bottlenecks → Failure Handling
+
+The best design is rarely the most complex one.
+
+It is the one that meets the business requirements with the right trade-offs.
+
+🎤 INTERVIEWER Q&A
+
+Q1. When do you discuss HLD vs LLD?
+HLD defines architecture and system boundaries. LLD goes deeper into component/class-level implementation.
+
+Q2. Can HLD and LLD overlap?
+Yes. A good design moves from architecture to implementation detail progressively.
+
+Q3. What should you clarify first?
+Functional requirements, non-functional requirements, scale, constraints and critical use cases.
+
+🔑 5 THINGS TO REMEMBER
+
+1️⃣ HLD = architecture
+2️⃣ LLD = implementation design
+3️⃣ Start with requirements
+4️⃣ Always discuss trade-offs
+5️⃣ Design for failure, not just the happy path
+
+💡 TAKEAWAY
+
+Good System Design is not about drawing boxes.
+It is about making engineering decisions.
+
+💬 Interview question:
+You are asked to design a URL Shortener.
+
+Would you start with the API, database, or architecture diagram — and why?
+
+
+
+<img width="800" height="1200" alt="image" src="https://github.com/user-attachments/assets/1d27e717-abe7-4f7d-aa55-b1236df6cb0e" />
+
+https://lnkd.in/p/gfE2Dzrc
+
