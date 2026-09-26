@@ -153,3 +153,66 @@ That’s how APIs become predictable. 🚀
 <img width="800" height="855" alt="image" src="https://github.com/user-attachments/assets/db5a3aea-e7e3-4692-b282-082534076421" />
 
 https://lnkd.in/p/dXwNMwGF
+
+
+****
+
+
+You’ve copied thousands of URLs. But can you explain what every symbol inside one actually does? 👀
+
+Alex was in a system design interview.
+
+Interviewer:
+“Take this URL and explain it.”
+
+https://lnkd.in/dfg3fEtr
+
+Alex:
+“Umm… it’s a link?” 💀
+
+Let’s decode it:
+
+🔐 https:// → Scheme
+How the resource should be accessed.
+
+🌐 www → Subdomain
+An optional subdivision of the domain.
+
+🏠 example.com → Domain
+Identifies the host.
+
+🚪 :8080 → Port
+Which network service to connect to.
+
+📁 /products/shoes → Path
+The resource/path being requested.
+
+🔎 ?color=black&size=10 → Query parameters
+Extra inputs sent with the request.
+
+#️⃣ #reviews → Fragment
+Points to a specific section of the resource.
+
+So remember:
+
+Scheme = HOW
+Domain = WHERE
+Port = WHICH SERVICE
+Path = WHAT
+Query = WITH WHAT OPTIONS
+Fragment = WHICH SECTION
+
+A URL isn’t just a “link.”
+
+It’s a compact way of describing how to access something, where it lives, what you want, and sometimes which part you want to see.
+
+Bonus: the fragment (#reviews) is typically handled by the browser/client and isn’t sent to the server in the HTTP request.
+
+Next time you see a scary-looking URL, don’t panic.
+
+Read it like a sentence. 😄
+
+<img width="800" height="835" alt="image" src="https://github.com/user-attachments/assets/a85857bc-3261-460e-a554-aaef62c8b419" />
+
+https://lnkd.in/p/dBYk4_c5
+
